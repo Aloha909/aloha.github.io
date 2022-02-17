@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent;min-width:0}html{min-height:100%;font-weight:400;touch-action:manipulation;-ms-touch-action:manipulation}body{min-height:100%;line-height:1}blockquote,q{quotes:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}h1,h2,h3,h4,h5{font-weight:inherit}b,strong{font-weight:700}input,button,textarea{border:0;padding:0;font-weight:inherit;background:transparent;line-height:1}hr{display:block;width:100%;height:1px;background:#ada29c;margin:0;padding:0;border:0}.noselect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}::-webkit-input-placeholder,::-moz-placeholder,:-ms-input-placeholder,:-moz-placeholder{color:inherit}input::placeholder{color:inherit;opacity:.7}input[type=text]::-ms-clear,input[type=text]::-ms-reveal{display:none;width:0;height:0}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-results-button,input[type="search"]::-webkit-search-results-decoration{display:none}input[type="text"],input[type="search"],input[type="password"],input[type="email"],input[type="button"],[type="submit"],textarea,select,.btn{box-sizing:border-box;display:block;width:100%;font-family:inherit;line-height:1;background:transparent;-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:none}input[type="button"],[type="submit"],.btn{cursor:pointer}a{color:inherit;text-decoration:none;cursor:pointer}select:disabled{opacity:.6}
+
+/*
+@media screen and (max-width: 1000px) {}
+*/
+
+:root {
+  --color-default: #383738;
+  --color-springwood: #F7F5F1;
+  --color-alabaster: #f9f9f9;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #383738;
+    font-family: 'Hind', sans-serif;
+    font-weight: normal;
+    font-size: 2.1rem;
+    line-height: 1;
+    background: #fff;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+.main {
+    padding-bottom: 7rem;
+    overflow: hidden;
+}
+
+.header {
+    padding: 9rem 0;
+    background: var(--color-springwood)
+}
+
+.header__wrapper {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    width: 93rem;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* profile START */
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile__image {
+    flex: 0 0 auto;
+    width: 20.4rem;
+    height: 20.4rem;
+    margin-right: 5.4rem;
+}
+
+.profile__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile__name {
+    font-size: 5.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile__name-circle {
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    bottom: -30%;
+    z-index: -1;
+}
+
+.profile__name-circle svg {
+    height: auto;
+    width: 100%;
+}
+
+.profile__position {
+    font-size: 2.4rem;
+}
+
+.profile__icon {
+    position: absolute;
+    right: 4.5rem;
+    top: -1.2rem;
+    width: 8.5rem;
+}
+
+/* profile END  */
+
+/* text START */
+
+.text_title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.text_classic {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* text END */
+
+/* links START */
+
+.links {
+    padding: 12rem 0;
+    width: 73rem;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.links__list {
+    margin-bottom: -2.4rem;
+}
+
+.links__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    background: rgba(196, 196, 196, 0.1);
+    width: 100%;
+    height: 11rem;
+    margin-bottom: 2.4rem;
+    transition: 0.3s;
+}
+
+.links__item:hover {
+    background: var(--color-default);
+    color: var(--color-alabaster);
+}
+
+.links__icon {
+    width: 16.5rem;
+    position: absolute;
+    right: -8rem;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+/* links END */
+
+
+
+
+/* image START */
+
+.logo {
+    width:85px;
+    height:85px;
+}
+
+.image {
+    width: 82rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0 5rem;
+}
+
+.soleil {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 640px;
+}
+
+.pic_alois {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bg_blue {
+    background:#d3ddf1;
+}
+
+.bg_black {
+    background:#000000;
+}
+
+/* image END */
+
+
+
+/* socials START  */
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 4rem 0;
+}
+
+.socials__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.2rem;
+    height: 9.2rem;
+    background: var(--color-alabaster);
+    transition: 0.3s;
+    margin: 0 1.4rem;
+}
+
+.socials__item svg {
+    width: 3.2rem;
+}
+
+.socials__item path {
+    transition: inherit;
+}
+
+.socials__item:hover {
+    background: var(--color-default);
+}
+
+.socials__item:hover path {
+    fill: var(--color-alabaster);;
+}
+
+/* socials END  */
+
+
+
+/* logo START */
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img,
+.logo svg {
+    width: 16rem;
+}
+
+/* logo END */
+
+.profile__icon-bottom {
+    position: absolute;
+    top: unset;
+    left: unset;
+    bottom: 6rem;
+    right: 20rem;
+}
+
+
+
+/* main black START  */
+
+.main_black {
+    background: var(--color-default);
+}
+
+/* main black END  */
